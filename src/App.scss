@@ -1,0 +1,141 @@
+.App {
+  background-image: url('../public/cards/sukno.jpeg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.playerCards {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 5px;
+  max-height: 200px;
+  overflow: auto;
+  background: linear-gradient(to top, black -10%, transparent 10%);
+}
+
+.battleField {
+  display: flex;
+  gap: 5px;
+}
+
+.battleFieldContainer {
+  min-height: 242px;
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+  border: 2px solid black;
+  border-radius: 10px;
+  flex-direction: column;
+  padding: 5px 0;
+  margin: 5px;
+}
+
+.line {
+  width: 100%;
+  height: 1px;
+  background: black;
+  margin: 10px 0;
+}
+
+.red {
+  color: red;
+  font-size: 70px;
+}
+
+.black {
+  color: black;
+  font-size: 100px;
+}
+
+.deckInfo {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  color: #fff;
+  padding-bottom: 10px;
+}
+
+.deckContainer {
+  width: 100%;
+}
+
+.card {
+  cursor: pointer;
+  transition: .2s;
+}
+
+.card:hover {
+  opacity: .7;
+  position: relative;
+  scale: 90%;
+}
+
+.btn-actions {
+  border: none;
+  outline: none;
+  width: 50px;
+  height: 50px;
+  position: fixed;
+  border-radius: 50%;
+  font-weight: 700;
+  color: #fff;
+  background-color: cornflowerblue;
+  bottom: 50px;
+  right: 50px;
+  cursor: pointer;
+}
+
+.btn-actions:hover {
+  opacity: 0.7;
+  transition: all 0.3s ease-in-out;
+}
+
+.red-btn {
+  background-color: crimson;
+}
+
+.game-over {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  left: 0;
+  top: 0;
+  background-color: rgba(0, 0, 0, 0.9);
+}
+
+.game-over-btn {
+  color: #fff;
+  background-color: forestgreen;
+  outline: none;
+  border: none;
+  padding: 10px 5px;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-top: 30px;
+  transition: .2s;
+}
+
+.game-over-btn:hover {
+  opacity: 0.7;
+}
+
+.lose {
+  color: crimson;
+}
+
+.win {
+  color: greenyellow;
+}
+
